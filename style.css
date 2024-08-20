@@ -12,40 +12,50 @@ body {
 
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 0.5em;
+h1, h2 {
     color: #333;
 }
 
-.image-container img,
-.linkedin-image img {
-    max-width: 90%; /* Adjust as needed */
+.image-container img {
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto; /* Center image horizontally */
+}
+.large-image {
+    width: 150%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.resume-description {
+
+.resume-section {
     margin: 20px 0;
 }
 
-.resume-links {
-    margin: 10px 0;
-}
-
-.resume-links a {
-    color: #0073e6;
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
+    color: #fff;
+    background-color: #0073e6;
+    border-radius: 25px; /* Creates the oval shape */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.resume-links a:hover {
-    text-decoration: underline;
+.resume-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.linkedin-section {
+.resume-button:active {
+    background-color: #003d7a;
+}
+
+.resume-button-container {
     margin: 20px 0;
 }
