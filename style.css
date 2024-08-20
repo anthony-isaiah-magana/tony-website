@@ -21,16 +21,9 @@ h1 {
     color: #333;
 }
 
-.video-container {
-    margin: 20px 0;
-    background-color: #000;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-video {
-    width: 100%;
-    height: auto;
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 .resume-section {
