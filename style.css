@@ -16,25 +16,36 @@ body {
     text-align: center;
 }
 
-h1 {
+h2 {
     margin-bottom: 0.5em;
     color: #333;
 }
 
-img {
+.image-container img,
+.linkedin-image img {
+    max-width: 30%; /* Adjust as needed */
+    height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Center image horizontally */
 }
 
-.resume-section {
+.resume-description {
     margin: 20px 0;
 }
 
-.resume-section a {
+.resume-links {
+    margin: 10px 0;
+}
+
+.resume-links a {
     color: #0073e6;
     text-decoration: none;
 }
 
-.resume-section a:hover {
+.resume-links a:hover {
     text-decoration: underline;
+}
+
+.linkedin-section {
+    margin: 20px 0;
 }
