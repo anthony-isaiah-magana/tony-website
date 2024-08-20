@@ -23,7 +23,7 @@ h2 {
 
 .image-container img,
 .linkedin-image img {
-    max-width: 30%; /* Adjust as needed */
+    max-width: 90%; /* Adjust as needed */
     height: auto;
     display: block;
     margin: 0 auto; /* Center image horizontally */
