@@ -5,37 +5,38 @@ body {
     background-color: #f4f4f4;
     color: #333;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
 .container {
-    flex: 1;
+    width: 100%;
+    max-width: 420px;
     text-align: center;
-    padding: 20px;
+    margin: 0 auto; 
+    display: block; 
+
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+h1, h2 {
+    color: #333;
 }
 
-.image-container {
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
+.headshot-container img {
+    max-width: 115%;
     height: auto;
-    border-radius: 10px;
+    margin: 5 auto; 
+    display: block;
+}
+.content-container img {
+    max-width: 150%;
+    height: auto;
+    margin: 5 auto; 
+    display: block;
 }
 
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.resume-button-container {
+.resume-section {
     margin: 20px 0;
 }
 
@@ -43,12 +44,12 @@ p {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
     background-color: #0073e6;
-    border-radius: 25px;
+    border-radius: 25px; /* Creates the oval shape */
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -61,25 +62,6 @@ p {
     background-color: #003d7a;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .resume-button {
-        padding: 8px 16px;
-        margin: 8px;
-        font-size: 0.9rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
+.resume-button-container {
+    margin: 20px 0;
 }
