@@ -5,32 +5,37 @@ body {
     background-color: #f4f4f4;
     color: #333;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
+    flex: 1;
     text-align: center;
+    padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    margin-bottom: 20px;
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-}
-.large-image {
-    width: 150%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
 }
 
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-.resume-section {
+.resume-button-container {
     margin: 20px 0;
 }
 
@@ -38,12 +43,12 @@ h1, h2 {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
     background-color: #0073e6;
-    border-radius: 25px; /* Creates the oval shape */
+    border-radius: 25px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -56,6 +61,25 @@ h1, h2 {
     background-color: #003d7a;
 }
 
-.resume-button-container {
-    margin: 20px 0;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .resume-button {
+        padding: 8px 16px;
+        margin: 8px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
