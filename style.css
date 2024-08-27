@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f42c;
     color: #333;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 .headshot-container img {
-    max-width: 100%;
+    max-width: 100ow %;
     height: auto;
     margin: 5 auto; 
     display: block;
