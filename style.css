@@ -1,41 +1,46 @@
+/* Main body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f42c;
+    background-color: #f4f4f4;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container {
-    width: 100%;
-    max-width: 420px;
-    text-align: center;
-    margin: 0 auto; 
-    display: block; 
 
+/* Container to center and frame content */
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Frame effect */
+    border: 1px solid #e0e0e0;
 }
 
-h1, h2 {
+/* Headings */
+h1, h2, h3 {
     color: #333;
 }
 
-.headshot-container img {
-    max-width: 100ow %;
-    height: auto;
-    margin: 5 auto; 
-    display: block;
-}
+/* Headshot and content images */
+.headshot-container img,
 .content-container img {
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
-    margin: 5 auto; 
     display: block;
+    margin: 10px auto;
+    border-radius: 8px;
 }
 
-.resume-section {
+/* Resume buttons */
+.resume-button-container {
     margin: 20px 0;
 }
 
@@ -47,20 +52,23 @@ h1, h2 {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    background-color: #0073e6;
-    border-radius: 25px; /* Creates the oval shape */
+    background-color: #161717c2;
+    border-radius: 25px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .resume-button:hover {
-    background-color: #005bb5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #233b53b6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.647);
 }
 
 .resume-button:active {
     background-color: #003d7a;
 }
 
-.resume-button-container {
-    margin: 20px 0;
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
 }
